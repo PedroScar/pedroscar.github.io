@@ -17,7 +17,7 @@ View Binding in Kotlin simplifies the interaction between the presentation layer
 
 To incorporate View Binding into your project, add the following lines to the build.gradle file of your module:
 
-```
+```kotlin
 android {
     ...
     viewBinding {
@@ -31,7 +31,7 @@ Make sure to sync the project after making these changes.
 
 ### Adding the RecyclerView component to your view
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -56,7 +56,7 @@ Here we can already set the layout manager. Sometimes this must be set programat
 
 Create a new layout in your 'res' folder. In this case, I called it 'item_recycler'.xml. The name is an important matter as we will be using it for binding.
 
-```
+```kotlin
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -94,7 +94,7 @@ Create a new layout in your 'res' folder. In this case, I called it 'item_recycl
 
 Create the Adapter that extends 'RecyclerView.Adapter'. In this case, I called it 'ExampleAdapter' and receive a list in its constructor. Please note that we inflate the binding in 'onCreateViewHolder' and do the binding in 'onBindViewHolder'.
 
-```
+```kotlin
 class ExampleAdapter(
     private val exampleList: List<Pair<String, String>>,
 ) : RecyclerView.Adapter<ExampleAdapter.ViewHolder>() {
@@ -123,8 +123,7 @@ class ExampleAdapter(
 
 When loading the layout that our component is, we need to set our newly created adapter. Follow my main activity code:
 
-```
-
+```kotlin
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -157,7 +156,7 @@ When we run this, we will get the result below. It's not that pretty, as the car
 
 For this, we will create a RecyclerView itemDecoration so we can fix this issue. Using this, we can configure it in multiple ways. I added the way so you can find the first and last item in itemDecoration.
 
-```
+```kotlin
 class ExempleDecoration : RecyclerView.ItemDecoration() {
 
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
@@ -174,7 +173,7 @@ class ExempleDecoration : RecyclerView.ItemDecoration() {
 ```
 
 Now let's add this itemDecoration in the RecyclerView and check the result:
-```
+```kotlin
  override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
