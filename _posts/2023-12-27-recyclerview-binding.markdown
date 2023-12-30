@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a RecyclerView with binding and itemDecoration
-date: 2023-12-27 00:00:00 +0300
+date: 2023-12-27 12:00:00 +0300
 description: A RecyclerView with binding configuration guide
 img: kotlin.jpg 
 tags: [Kotlin, RecyclerView, Binding]
@@ -191,6 +191,7 @@ Now let's add this itemDecoration in the RecyclerView and check the result:
     private fun addItemDecoration() {
         binding.rvRecycler.addItemDecoration(ExempleDecoration())
     }
+}
 ```
 
 ![Final result]({{site.baseurl}}/assets/img/posts/post2/img2.png){: width="250" }

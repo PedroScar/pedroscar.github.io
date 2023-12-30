@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Advanced strategies for dependency management in Kotlin modular projects
-date: 2023-12-17 00:00:00 +0300
+title: Using buildSrc for dependency management in Kotlin modular projects
+date: 2023-12-17 12:00:00 +0300
 description: A buildSrc configuration guide
 img: kotlin.jpg # Add image post (optional)
-tags: [Kotlin, buildSrc, Advanced] # add tag
+tags: [Kotlin, buildSrc, Gradle] # add tag
 ---
 
 In Kotlin modular projects, efficient dependency management is crucial for smooth and organized development. This article explores a recommended practice: the use of buildSrc. We will discuss the benefits of this approach and provide a practical guide to set up and make the most of this tool.
