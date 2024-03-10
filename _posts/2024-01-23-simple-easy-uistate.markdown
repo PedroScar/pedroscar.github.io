@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UiState - Centralize you screen states in a simple way
-date: 2023-12-27 12:00:00 +0300
+date: 2024-01-23 12:00:00 +0300
 description: Learn how to implement uiState in a straightforward manner
 img: kotlin.jpg 
 tags: [Kotlin, UiState, Optimize]
