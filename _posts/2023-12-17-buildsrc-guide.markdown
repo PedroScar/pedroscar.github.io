@@ -3,7 +3,7 @@ layout: post
 title: Using buildSrc for dependency management in Kotlin modular projects
 date: 2023-12-17 12:00:00 +0300
 description: A buildSrc configuration guide
-img: kotlin.jpg # Add image post (optional)
+img: gradle.jpg # Add image post (optional)
 tags: [Kotlin, buildSrc, Gradle] # add tag
 ---
 

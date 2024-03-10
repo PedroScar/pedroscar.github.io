@@ -3,7 +3,7 @@ layout: post
 title: Create custom gradle files to optimize your project
 date: 2023-12-27 12:00:00 +0300
 description: How to create custom gradle files to optimize your project
-img: kotlin.jpg 
+img: gradle.jpg 
 tags: [Kotlin, Gradle, Optimize]
 ---
 
